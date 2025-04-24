@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Clone</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Tech Product</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#features">Features</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h2>Innovate. Inspire. Impact.</h2>
-    <p>Join the future of technology today.</p>
-  </section>
-  <section id="features">
-    <h3>Features</h3>
-    <ul>
-      <li>High performance</li>
-      <li>Responsive Design</li>
-      <li>Modern UI</li>
-    </ul>
-  </section>
-  <footer>
-    <p>&copy; 2025 Tech Co.</p>
-  </footer>
+    <header>
+        <h1>Tech Product</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Innovate. Inspire. Impact.</h2>
+        <p>Join the future of technology today.</p>
+        <button>Learn More</button> </section>
+    <section id="features">
+        <h3>Features</h3>
+        <ul>
+            <li>High performance</li>
+            <li>Responsive Design</li>
+            <li>Modern UI</li>
+            <li>Cutting-edge Technology</li> <li>24/7 Support</li>             </ul>
+    </section>
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <p>Get in touch for a demo or more information.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Contact</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Tech Co.</p>
+    </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
